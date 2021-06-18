@@ -25,7 +25,7 @@ jobs:
       run: mvn test -Dtest -DfailIfNoTests=false 
 
   build:
-
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
